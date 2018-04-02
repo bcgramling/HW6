@@ -17,7 +17,7 @@
                     <tbody>
                         <tr>
                             <td>Leader's ID:</td>
-                            <td><input type="text" name="name" value="<%= leader.getLeaderID() %>" /></td> 
+                            <td><input type="text" name="id" value="<%= leader.getLeaderID() %>" readonly="" /></td> 
                         </tr>
                         <tr>
                             <td>Leader's Name:</td>

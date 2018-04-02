@@ -32,3 +32,7 @@ a {
 tr:hover {
     background-color: #CCCCCC;
 }
+
+input[readonly] {
+    background-color: gray;
+}
