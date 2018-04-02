@@ -12,5 +12,9 @@
         <%=table %>
         <br><br>
         <a href ="add"> Add new Leader </a>
+        <br>
+        <br>
+        <a href ="search.jsp"> Search Leaders </a>
+        
     </body>
 </html>

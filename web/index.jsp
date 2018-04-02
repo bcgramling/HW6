@@ -10,5 +10,7 @@
         <h1>My Civilization VI Leaders Database</h1>
         
         <a href="read">View All Leaders</a>
+        <br> <br>
+        <a href="search.jsp">Search Leaders</a>
     </body>
 </html>
