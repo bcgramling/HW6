@@ -56,16 +56,21 @@ float: left;
 /*formats the page footer */
 .footer {background-color:#D2B48C; text-align:left; padding:25px;}
 
+
+input[readonly] {
+    background-color: gray;
+}
+
 table {
    border-collapse: collapse;
    border: 8px solid white;
+   
 }
 
 td {
     text-align: left;
     border: 1px solid white;
-    background-color: #F08080;
-    color: white;
+    color: black;
     padding: 5px;
 }
 
@@ -82,10 +87,15 @@ a {
     color: #696969;
 }
 
-tr:hover {
-    background-color: #CCCCCC;
+tr:nth-child(even) {
+    background-color:#CCCCCC;
 }
 
-input[readonly] {
-    background-color: gray;
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
+
+tr:hover {
+    background-color: white;
+}
+
