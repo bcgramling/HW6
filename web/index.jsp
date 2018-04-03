@@ -7,10 +7,16 @@
         <title>Civ VI Leaders</title>
     </head>
     <body>
-        <h1>My Civilization VI Leaders Database</h1>
-        
-        <a href="read">View All Leaders</a>
-        <br> <br>
-        <a href="search.jsp">Search Leaders</a>
+        <div class="wrap"> <!--div to hold all other divs -->
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp"   %>
+                <div class ="main">
+                    <h1>My Civilization VI Leaders Database</h1>
+                    <a href="read">View All Leaders</a>
+                    <br> <br>
+                    <a href="search.jsp">Search Leaders</a>
+                </div>
+            <%@ include file="includes/footer.jsp"  %>
+        </div>  <!--class wrap div -->
     </body>
 </html>

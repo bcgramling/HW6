@@ -8,13 +8,14 @@
     </head>
     <% String table=(String) request.getAttribute("table");%>
     <body>
-        <h1>Civilization VI Leaders</h1>
-        <%=table %>
-        <br><br>
-        <a href ="add"> Add new Leader </a>
-        <br>
-        <br>
-        <a href ="search.jsp"> Search Leaders </a>
-        
+        <div class="wrap"> <!--div to hold all other divs -->
+        <%@ include file="includes/header.jsp" %>
+        <%@ include file="includes/menu.jsp"   %>
+            <div class ="main">
+                <h1>Civilization VI Leaders</h1>
+                <%=table %>
+            </div>
+        <%@ include file="includes/footer.jsp"  %>
+        </div>
     </body>
 </html>

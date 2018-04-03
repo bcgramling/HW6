@@ -7,18 +7,18 @@
         <title>Search Leaders</title>
     </head>
     <body>
-        <h1>Search Leaders</h1>
-        
-        <form name="searchForm" action="search" method="get">
-            
-            <input type="text" name="searchVal" value="" />
-            
-            <br>
-            
-            <input type="submit" name="submit" value="Search" />
-            
-        </form>
-        
-        
+        <div class="wrap"> <!--div to hold all other divs -->
+        <%@ include file="includes/header.jsp" %>
+        <%@ include file="includes/menu.jsp"   %>
+            <div class ="main">
+                <h1>Search Leaders</h1>
+                <form name="searchForm" action="search" method="get">
+                    <input type="text" name="searchVal" value="" />
+                    <br><br>
+                    <input type="submit" name="submit" value="Search" />
+                </form>
+            </div>
+        <%@ include file="includes/footer.jsp"  %>
+        </div>
     </body>
 </html>

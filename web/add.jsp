@@ -9,10 +9,13 @@
         <title>Add new Leader</title>
     </head>
     <body>
-        <h1>Add a new Leader</h1>
-        
-        <form name="addForm" action="addLeader" method="get">
-            <table>
+        <div class="wrap"> <!--div to hold all other divs -->
+        <%@ include file="includes/header.jsp" %>
+        <%@ include file="includes/menu.jsp"   %>
+        <div class ="main">
+            <h1>Add a new Leader</h1>
+            <form name="addForm" action="addLeader" method="get">
+                <table>
                     <tbody>
                         <tr>
                             <td>Leader's Name:</td>
@@ -35,14 +38,14 @@
                             <td><input type="reset" value="clear" id="clear">
                                 <input type="submit" name="submit" value="submit" />
                                 <form name="leaders" action="read.jsp" method="post">
-                               <input type="submit" value="Cancel" id="submit">
+                                <input type="submit" value="Cancel" id="submit">
                             </td> 
                         </tr>
                     </tbody>
                 </table>
-            
-        </form>
-         
-        
+            </form>  
+        </div>
+        <%@ include file="includes/footer.jsp"  %>
+        </div>
     </body>
 </html>

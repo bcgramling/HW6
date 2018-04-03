@@ -1,6 +1,60 @@
 body{
     background-color:#D2B48C;
 }
+/*wrapper div that holds all of the content divs for the pag */
+.wrap {text-align:center; width:90%; margin:0 auto; border:8px solid black; margin-top:25px;}
+
+/* formats the page header */
+.header {background-color:#D2B48C; text-align:left; padding:25px;}
+
+/*formats the menu bar */
+.menu { background-color:#D2B48C; text-align:left; padding: 25px;}
+
+/*Fat Erik's Pipelist*/
+.menu
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.menu li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.menu li:before { content: "| "; }
+.menu li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html .menu li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html .menu { height: 1%; }
+
+* html .menu li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html .menu li:first-child { border-left: 0; }
+
+/*formats main page content */
+.main {background-color:#D2B48C; text-align:left; padding:25px;}
+
+/*formats the page footer */
+.footer {background-color:#D2B48C; text-align:left; padding:25px;}
 
 table {
    border-collapse: collapse;
